@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating Own College Website</title>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="menu">
+        <img src="vnitlogo.jfif" alt="vnitlogo" width="150px">
+        <h1>Visvesvaraya National Institute Of Technology,Nagpur</h1>
+        <select id="language" name="Language">
+        <option>English</option>
+        <option>Hindi</option>
+        </select>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#menu">Home</a></li>
+            <li><a href="#cse">Computer Science</a></li>
+            <li><a href="#ece">Electronics and Communication</a></li>
+            <li><a href="#eee">Electrical and Electronics</a></li>
+            <li><a href="#mech">Mechanical</a></li>
+            <li><a href="#civ">Civil</a></li>
+            <li><a href="#chem">Chemical</a></li>
+            <li><a href="#admissionform">Admission Form</a></li>
+            <li><a href="#contactus">Contact Us</a></li>
+        </ul>
+    </nav>
+    <section class="images"></section>
+    <section class="departments">
+        <div id="cse">
+            <img src="cse.jfif" alt="cse building" width="224px">
+            <p>This is our CSE department. Candidates will complete the Computer Science Engineering course and get graduation. Our alumni are currently excelling in their career</p>
+        </div>
+        <div id="ece">
+            <img src="ece.jpg" alt="ece building" width="224px">
+            <p>This is our ECE department. Candidates will complete the Electronicsand Communication Engineering course and get graduation. Our alumni are currently excelling in their career</p>
+        </div>
+        <div id="eee">
+            <img src="eee.jfif" alt="eee building" width="224px">
+            <p> This is our EEE department. Candidates will complete the Electrical Engineering course and get graduation. Our alumni are currently excelling in their career</p>
+        </div>
+        <div id="mech">
+            <img src="Mech-Dept.png" alt="mech building" width="224px">
+            <p>This is our Mech department. Candidates will complete the Mechanical Engineering course and get graduation. Our alumni are currently excelling in their career</p>
+        </div>
+        <div id="civ">
+            <img src="civ.jfif" alt="civ building" width="224px">
+            <p>This is our Civ department. Candidates will complete the Civil Engineering course and get graduation. Our alumni are currently excelling in their career</p>
+        </div>
+        <div id="chem">
+            <img src="chem.jfif" alt="chem building" width="224px">
+            <p>This is our EEE department. Candidates will complete the Chemical Engineering course and get graduation. Our alumni are currently excelling in their career</p>
+        </div>
+    </section>
+    <section class="admissionform">
+        <form id="admissionform">
+           <label for="name">Name</label><br>
+           <input type="text" id="name" name="Name" placeholder="enter name" required><br><br>
+           <label for="email">Email</label><br>
+           <input type="email" id="email" name="Email" placeholder="enter email" required><br><br>
+           <label for="pwd">Password</label><br>
+           <input type="password" id="pwd" name="password" placeholder="enter password" required><br><br>
+           <label for="HQ">Highest Qualification</label><br>
+           <input type="text" id="HQ" name="Qualification" placeholder="enter qualification" required><br><br>
+           <label for="dob">Date of Birth</label><br>
+           <input type="date" id="dob" name="DOB" placeholder="enter date of birth" required><br><br>
+           <label for="num">Mobile Number</label><br>
+           <input type="text" id="num" name="Mobile Number" placeholder="enter mobile number" required><br><br>
+           <label id="inline" for="certificates">Certificates:</label><br>
+           <input type="checkbox" id="ssc" name="Certificate" required>
+           <label id="inline" for="ssc">10th</label>
+           <input type="checkbox" id="12th" name="Certificate" required>
+           <label id="inline" for="12th">12th</label>
+           <input type="checkbox" id="ug" name="Certificate" required>
+           <label id="inline" for="ug">UG</label><br><br>
+           <label id="inline" for="gender">Gender:</label><br>
+           <input type="radio" id="male" name="Gender" required>
+           <label id="inline" for="male">Male</label>
+           <input type="radio" id="female" name="Gender" required>
+           <label id="inline" for="female">Female</label>      
+           <input type="radio" id="other" name="Gender" required>
+           <label id="inline" for="other">Other</label><br><br>
+           <label id="inline" for="hostel">Hostel Required:</label>      
+           <select id="hostel" name="Hostel">
+             <option value="yes">Yes</option>
+             <option value="no">No</option>
+           </select><br><br>
+           <label for="file">Upload File</label>
+           <input type="file" id="file" name="form"><br><br>
+           <button type="submit">Confirm</button>
+           <button type="reset">Reset</button>
+        </form>
+    </section>
+    <footer>
+        <ul id="contactus">
+            <li>vnit.123@gmail.com</li>
+            <li>9876543210</li>
+        </ul><br>
+        <ul>
+            <li><a href="https://vnit.ac.in/" target="_blank">Website Policy</a></li>
+            <li><a href="https://vnit.ac.in/index.php/copyright-policy" target="_blank">Copy Right Policy</a></li>
+            <li><a href="https://vnit.ac.in/index.php/privacy-policy-2/" target="_blank">Privacy Policy</a></li>
+        </ul>
+    </footer>
+</body>
+</html>
